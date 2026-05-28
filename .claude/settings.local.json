@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(start *)",
+      "Bash(git config *)",
+      "Bash(git *)",
+      "Bash(ssh-keygen *)",
+      "Bash(gh --version)",
+      "Bash(winget install *)",
+      "Bash(powershell *)",
+      "Bash(curl --version)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Program Files \\(x86\\)/**)",
+      "Bash(cmd.exe *)",
+      "Bash(ssh *)"
+    ]
+  }
+}
