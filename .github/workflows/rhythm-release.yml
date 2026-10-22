@@ -1,0 +1,22 @@
+name: Publish rhythm control
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths: [rhythm_control/release.json]
+permissions:
+  contents: write
+concurrency:
+  group: rhythm-control-release
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate and publish only rhythm control
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: |
+          python3 rhythm_control/publish_release.py

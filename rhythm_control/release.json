@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "versionCode": 24,
+  "versionName": "0.6.3",
+  "packageName": "cn.rhythm.control",
+  "apkUrl": "https://github.com/cofearis/claude-todo/releases/download/rhythm_control-v0.6.3/rhythm_control_0.6.3.apk",
+  "size": 2843662,
+  "sha256": "fc19bf7cb1f758fa97bd04d310e06975980b4fc0bc5f7d24db44e0e38d032c29"
+}
